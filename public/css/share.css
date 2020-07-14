@@ -1,0 +1,23 @@
+.share-btns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.share-btns a {
+    margin-bottom: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.share-btns a:not(:last-child) {
+    margin-right: 5px;
+}
+
+.share-btns a.facebook {
+    background: url("../image/share-btns.png") no-repeat left top;
+    
+}
+
+.share-btns a.twitter {
+    background: url("../image/share-btns.png") no-repeat -42px top;
+}

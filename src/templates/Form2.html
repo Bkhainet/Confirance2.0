@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>To participate in the conference, please fill out the form</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!---->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <link href="css/map.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+    <div id="map"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 order-md-1">
+                <hr class="mb-4">
+                <form class="needs-validation" action="/Form2" method="post" enctype="multipart/form-data" novalidate>
+
+                    <div class="mb-3">
+                        <label for="Company">Company</label>
+                        <div class="input-group">
+                            <input type="text" name="company" class="form-control ntSaveForms">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Position">Position</label>
+                        <div class="input-group">
+                            <input type="text" name="position" class="form-control ntSaveForms">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1">About me</label>
+                        <textarea class="form-control ntSaveForms" name="about_me" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        
+                    </div>
+                    <div class="mb-3">
+                        <label for="Photo">Photo</label>
+                        <div class="input-group">
+                            <input class="form-control ntSaveForms" type="file" name="upload">
+                        </div>
+
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">NEXT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfc_huPCqyPtBpWdWd3O0T2FRNFOF8EMc&callback=initMap"></script>
+    <script src="js/googlemaps.js"></script>
+    <script type='text/javascript' src="js/ntsaveforms.js"></script>
+
+</body></html>
