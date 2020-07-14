@@ -47,13 +47,7 @@ class MainController
         $stmt->execute();
 
         $tw = Template_Twig::twig();
-        echo $tw->render("Form2.html", array('firstname' => $firstname, 
-                                                'lastname' => $lastname, 
-                                                'birthdate' => $birthdate, 
-                                                'report_subject' => $report_subject, 
-                                                'country' => $country, 
-                                                'phone' => $phone, 
-                                                'email' => $email));
+        echo $tw->render("Form2.html");
     }
 
     public function post_form_2()
